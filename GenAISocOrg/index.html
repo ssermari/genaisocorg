@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>GenAISoc.org</title>
+    <style>
+/* CSS for styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  background-color: #3A3B3C;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#header .logo {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(genailogo.jpg);
+  background-size: cover;
+  margin-right: 10px;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  display: inline;
+}
+
+
+#header h1 a {
+  color: #fff;
+  text-decoration: none;
+  align-items: left;
+}
+
+#header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: left;
+  color: #fff;
+  text-decoration: none;
+}
+
+#header ul li {
+  margin-left: 10px;
+   align-items: left;
+   color: #fff;
+   text-decoration: none;
+}
+
+#header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#section1 {
+  background-image: url(backgr.png);
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+#section1 h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+#section1 p {
+  font-size: 20px;
+  margin: 10px 0 0;
+}
+
+#section2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#section2 .left-column {
+  flex: 1;
+  padding-right: 20px;
+}
+
+#section2 .right-column {
+  flex: 1;
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+</style>
+  </head>
+  <body>
+    <header id="header"> <img src="genailogo.png" height="50"
+        width="50">
+      <h1><a href="index.html">GenAISoc.org</a></h1>
+      <ul>
+        <li><a href="#events">EVENTS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#membership">MEMBERSHIP</a></li>
+        <li><a href="#news">NEWS</a></li>
+      </ul>
+    </header>
+    <section id="section1">
+      <h2>GenAISoc.org</h2>
+      <h3>A society of individuals passionate about Generative AI</h3>
+    </section>
+    <section id="section2">
+      <div class="left-column" align="center">
+        <h3>Our Charter</h3>
+        <p>A place for ML/AI professionals to foster communication and
+          sharing of knowledge about GenerativeAI solutions, best
+          practices, techniques, tools and platforms.<br>
+          <br>
+          To provide a vendor agnostic forum with no direct marketing or
+          member information sharing with vendors or professional
+          service providers. Your information is kept private.<br>
+          <br>
+          A place to discuss ethical issues regarding the use of
+          Generative AI.<br>
+          <br>
+          Member opportunities to help lead the community, present
+          solutions, mentor fellow members, give back to our various
+          local communities and provide social goods and services.</p>
+      </div>
+      <div class="right-column" align="center"> <img src="backgr.png"
+          alt="GenAI Image" height="400"> </div>
+    </section>
+    <footer id="footer"> © GenAISoc.org - <span id="year"></span> </footer>
+    <script>
+// JavaScript to update the current year in the footer
+const yearSpan = document.getElementById('year');
+yearSpan.textContent = new Date().getFullYear();
+</script>
+  </body>
+</html>
