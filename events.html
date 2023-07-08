@@ -164,35 +164,9 @@ font-size: 14px;
       <h3>. . . </h3>
     </section>
     <section id="section2">
-      <script>
-    // Load the events data
-    var events = JSON.parse(document.getElementById("events").innerHTML);
-
-    // Create a Moment object for today
-    var today = moment();
-
-    // Create a calendar element
-    var calendar = document.getElementById("calendar");
-
-    // Loop through the events and add them to the calendar
-    for (var i = 0; i < events.length; i++) {
-      var event = events[i];
-
-      // Create a Moment object for the event date
-      var date = moment(event.date);
-
-      // Check if the event is today
-      if (date.isSame(today)) {
-        // Add the event to the calendar
-        calendar.innerHTML += `
-          <div class="event">
-            <h3>${event.name}</h3>
-            <p>${event.description}</p>
-          </div>
-        `;
-      }
-    }
-  </script> </section>
+      <p><i> Please be patient while we are building our team and this
+          site! Thank you. </i></p>
+    </section>
     <footer id="footer"> © GenAISoc.org - <span id="year"></span> </footer>
     <script>
 // JavaScript to update the current year in the footer
