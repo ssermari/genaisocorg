@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>GenAISoc.org</title>
+    <style>
+/* CSS for styling */
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+#header {
+background-color: #3A3B3C;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+text-decoration: none;
+}
+
+#header .logo {
+display: inline-block;
+width: 30px;
+height: 30px;
+background-image: url(genailogo.jpg);
+background-size: cover;
+margin-right: 10px;
+}
+
+#header h1 {
+margin: 0;
+font-size: 20px;
+color: #fff;
+text-decoration: none;
+display: inline;
+}
+
+
+#header h1 a {
+color: #fff;
+text-decoration: none;
+align-items: left;
+}
+
+#header ul {
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+align-items: left;
+color: #fff;
+text-decoration: none;
+}
+
+#header ul li {
+margin-left: 10px;
+align-items: left;
+color: #fff;
+text-decoration: none;
+}
+
+#header ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+#section1 {
+background-image: url(backgr.png);
+background-size: cover;
+height: 40vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-align: center;
+}
+
+#section1 h2 {
+font-size: 40px;
+margin: 0;
+}
+
+#section1 p {
+font-size: 20px;
+margin: 10px 0 0;
+}
+
+#section2 {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding: 20px;
+}
+
+ .photo-tile {
+      display: inline-block;
+      width: 25%;
+      padding: 10px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .photo-tile img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .photo-tile .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .photo-tile .name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .photo-tile .title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+/* Adjust the styling as needed */
+
+
+#footer {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: center;
+font-size: 14px;
+}
+</style>
+  </head>
+  <body>
+    <header id="header"> <a href="index.html"> <img
+          src="genailogo.png" height="50" width="50"> </a>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#events">EVENTS</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#membership">MEMBERSHIP</a></li>
+        <li><a href="#news">NEWS</a></li>
+      </ul>
+    </header>
+    <section id="section1">
+      <h2>Events</h2>
+      <h3>. . . </h3>
+    </section>
+    <section id="section2">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+      <script>
+    // JavaScript code for initializing FullCalendar
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        // Configure your calendar options here
+        // For example:
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,agendaWeek,agendaDay'
+        },
+        defaultView: 'month',
+        events: [
+          {
+            title: 'Event 1',
+            start: '2023-07-10'
+          },
+          {
+            title: 'Event 2',
+            start: '2023-07-22',
+            end: '2023-07-23'
+          },
+          // Add more events here
+        ]
+      });
+    });
+  </script> </section>
+  </body>
+</html>
