@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>GenAISoc.org</title>
     <style>
@@ -163,35 +164,41 @@ font-size: 14px;
       <h3>. . . </h3>
     </section>
     <section id="section2">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
       <script>
-    // JavaScript code for initializing FullCalendar
-    $(document).ready(function() {
-      $('#calendar').fullCalendar({
-        // Configure your calendar options here
-        // For example:
-        header: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'month,agendaWeek,agendaDay'
-        },
-        defaultView: 'month',
-        events: [
-          {
-            title: 'Event 1',
-            start: '2023-07-10'
-          },
-          {
-            title: 'Event 2',
-            start: '2023-07-22',
-            end: '2023-07-23'
-          },
-          // Add more events here
-        ]
-      });
-    });
-  </script> </section>
+    // Load the events data
+    var events = JSON.parse(document.getElementById("events").innerHTML);
+
+    // Create a Moment object for today
+    var today = moment();
+
+    // Create a calendar element
+    var calendar = document.getElementById("calendar");
+
+    // Loop through the events and add them to the calendar
+    for (var i = 0; i < events.length; i++) {
+      var event = events[i];
+
+      // Create a Moment object for the event date
+      var date = moment(event.date);
+
+      // Check if the event is today
+      if (date.isSame(today)) {
+        // Add the event to the calendar
+        calendar.innerHTML += `
+          <div class="event">
+            <h3>${event.name}</h3>
+            <p>${event.description}</p>
+          </div>
+        `;
+      }
+    }
+  </script>
+    </section>
+    <footer id="footer"> © GenAISoc.org - <span id="year"></span> </footer>
+    <script>
+// JavaScript to update the current year in the footer
+const yearSpan = document.getElementById('year');
+yearSpan.textContent = new Date().getFullYear();
+</script>
   </body>
 </html>
