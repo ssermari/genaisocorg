@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>GenAISociety.org - The society for Generative AI
+      practitioners and enthusiasts</title>
+    <style>
+    /* CSS for styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #header {
+      background-color: #3A3B3C;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      text-decoration: none;
+      flex-wrap: wrap;
+    }
+
+    #header .logo {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-image: url(genailogo.jpg);
+      background-size: cover;
+      margin-right: 10px;
+    }
+
+    #header h1 {
+      margin: 0;
+      font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+      display: inline;
+    }
+
+    #header h1 a {
+      color: #fff;
+      text-decoration: none;
+      align-items: left;
+    }
+
+    #header ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-decoration: none;
+      flex-wrap: wrap;
+    }
+
+    #header ul li {
+      margin-left: 10px;
+      align-items: left;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #header ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #section1 {
+      background-image: url(backgr.png);
+      background-size: cover;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    #section1 h2 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    #section1 p {
+      font-size: 20px;
+      margin: 10px 0 0;
+    }
+
+    #section2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      width: 70%;
+      margin: 0 auto; /* Center the section horizontally */
+    }
+
+    .photo-tile {
+      display: inline-block;
+      width: 25%;
+      padding: 10px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .photo-tile img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .photo-tile .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .photo-tile .name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .photo-tile .title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* Adjust the styling as needed */
+
+    #footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+  </head>
+  <body>
+    <header id="header"> <a href="index.html"> <img
+          src="genailogo.png" width="50" height="50"> </a>
+      <h1><a href="index.html">GenAISociety.org</a></h1>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="membership.html">MEMBERSHIP</a></li>
+        <li><a href="news.html">NEWS</a></li>
+      </ul>
+    </header>
+    <section id="section1">
+      <h2>Membership</h2>
+      <h3>Please fill out the form below and hit send when finished</h3>
+    </section>
+    <section id="section2">
+      <h3>Member Benefits</h3>
+      <p> ✔ Access to discussion boards on Generative AI topics. See how
+        professionals across different industries are using GenAI, what
+        challenges they face, and how they are dealing with them.<br>
+        <br>
+        ✔ Join exclusive curated presentations by members and vendors,
+        that dive into the details of implementations and reference
+        architectures.<br>
+        <br>
+        ✔ A place to discuss ethical issues regarding the use of
+        Generative AI and foster change to benefit society.<br>
+        <br>
+        ✔ Opportunities to help lead the community, present solutions,
+        mentor fellow members, give back to our various local
+        communities, and provide social goods and services. </p>
+      <br>
+      <br>
+      <b><i>We do not discriminate on the basis of race, color,
+          religion, gender, gender identity or expression, sexual
+          orientation, national origin, genetics, disability, age, or
+          any other protected status. We are committed to creating an
+          inclusive and diverse environment where everyone is treated
+          with respect, dignity, and fairness. We believe that diversity
+          and inclusion are fundamental to our organization and
+          essential for fostering creativity, innovation, and
+          collaboration. We strive to ensure equal opportunities and
+          promote a culture of acceptance and belonging for all
+          individuals.</i></b> <br>
+      <br>
+      <p>Head over to the <b><a href="contact.html">CONTACT</a></b>
+        page to request to join.</p>
+    </section>
+    <footer id="footer">© GenAISoc.org - <span id="year"></span></footer>
+    <script>
+  // JavaScript to update the current year in the footer
+  const yearSpan = document.getElementById('year');
+  yearSpan.textContent = new Date().getFullYear();
+</script>
+  </body>
+</html>
